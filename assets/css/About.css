@@ -1,0 +1,302 @@
+
+        html,
+        body,
+        header,
+        .view {
+          height: 100%;
+        }
+      
+        @media (max-width: 740px) {
+          html,
+          body,
+          header,
+          .view {
+            height: 100vh;
+          }
+        }
+      
+        .top-nav-collapse {
+          background-color: transparent !important;
+          background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(59, 37, 87, 0.4) 100%);
+          background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(55, 23, 94, 0.4) 100%));
+          background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(51, 17, 94, 0.4) 100%);
+        }
+      
+        .navbar:not(.top-nav-collapse) {
+          background: transparent !important;
+        }
+      
+        @media (max-width: 991px) {
+         .navbar:not(.top-nav-collapse) {
+          background: #82b1ff !important;
+         }
+        }
+        
+        h5 {
+          letter-spacing: 3px;
+        }
+
+        @media screen and (min-width: 1300px) {
+        #h1 {
+          font-size: 5rem;
+        }
+        }
+
+        @media screen and (min-width: 1300px) {
+        #h2 {
+          font-size: 3rem;
+        }
+        }
+
+        @media screen and (max-width: 940px) {
+        #h1 {
+          font-size: 3.5rem;
+          top: 1rem;
+        }
+        }
+
+        @media screen and (max-width: 940px) {
+        #h2 {
+          font-size: 2rem;
+        }
+        }
+
+        @media screen and (max-width: 940px) {
+        img {
+          left: 6rem;
+        }
+        p {
+          left: 2rem;
+        }
+        }
+
+        #h1 {
+          letter-spacing: -0.3rem;
+        }
+
+        #img2 {
+          position: relative;
+          float: left;
+          top: -5rem;
+        }
+
+        .zoom {
+        transition: transform .2s;
+        margin: 0 auto;
+      }
+
+      .zoom:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+      }
+  
+      .header {
+        text-align: center;
+      }
+
+      .col1 {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+      
+.text-block {
+  position: relative;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 390px;
+  margin-left: 6%;
+}
+
+.centered {
+  position: absolute;
+  top: 405%;
+  left: 15%;
+  transform: translate(-20%, -45%);
+}
+
+.color {
+    background-color: yellow;
+    height: 340px;
+    width: 480px;
+    margin-left: 25%;
+    position: relative;
+    top: -4rem;
+}
+
+#a {
+  text-decoration: none;
+}
+
+#a:hover {
+  text-decoration: underline;
+}
+
+#hl {
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+    position: relative;
+    top: -100%;
+    left: 75%;
+}
+
+#hfs {
+    color: black;
+    font-size: 2rem;
+    font-style: italic;
+    top: 402%;
+    left: 74%;
+    position: absolute;
+    -ms-transform: rotate(40deg); /* IE 9 */
+  transform: rotate(40deg); /* Standard syntax */
+}
+
+#ju {
+  color: black;
+  font-size: 2rem;
+  font-style: italic;
+  position: absolute;
+  top: 397%;
+  left: 70%;
+  -ms-transform: rotate(90deg); /* IE 9 */
+  transform: rotate(90deg); /* Standard syntax */
+}
+
+#backtop {
+  position: fixed;
+  left:auto;
+  right: 20px;
+  top:auto;
+  bottom: 20px;
+  outline: none;
+  overflow:hidden;
+  color:#fff;
+  text-align:center;
+  background-color: #FFFF00;
+  height:40px;
+  width:40px;
+  line-height:40px;
+  font-size:14px;
+  border-radius:2px;
+  cursor:pointer;
+  transition:all 0.3s linear;
+  z-index:999999;
+  opacity:1;
+  display:none;
+}
+
+#backtop:hover {
+  background-color:#27CFC3;
+}
+
+#backtop.mcOut {
+  opacity:0;
+}
+
+#a1 {
+    padding-right: 4.7em;
+}
+#a1:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a2 {
+    padding-right: 5.5em;
+}
+#a2:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a3 {
+    padding-right: 5em;
+}
+#a3:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a4 {
+    padding-right: 6.8em;
+}
+#a4:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("background4.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#reg {
+  color: white;
+}
+
+#reg:hover {
+  background-color: #FFFF00;
+  color: black;
+}

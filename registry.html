@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Registration Page</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+            <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+  
+<script>
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+</script>
+<style>
+  body {
+    font-family: cursive;
+  }
+.fa-eye-slash {
+    color: #070c0a;
+    top: -1.9rem;
+    left: 20rem;
+    margin-left: -25px;
+    margin-top: -29px;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+  background-color: #52489C;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: #1C77C3 !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #52489C !important;
+  }
+}
+
+.edge-header {
+  background-color: #96BDC6;
+}
+
+#a1 {
+    padding-right: 4.7em;
+}
+#a1:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a2 {
+    padding-right: 5.5em;
+}
+#a2:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a3 {
+    padding-right: 5em;
+}
+#a3:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#a4 {
+    padding-right: 6.8em;
+}
+#a4:hover{
+    color: white;
+    background-color: black;
+    box-sizing: border-box;
+    box-shadow: lightslategrey 5px 5px 5px;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand white-text">
+      <i class="fab fa-asymmetrik mr-1"></i><span class="" style="font-family: 'Balsamiq Sans', cursive;">HMS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Homepg.html"><i class="fas fa-home"></i>Home
+            <span class="sr-only">(current)</span>
+          </a>
+          </li>
+          <li class="nav-item ml-1">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item ml-1">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Support</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="ml-2 text-center" href="features.html" id="a1">Features</a>
+              <a class="ml-2 text-center" href="pricing.html" id="a2">Pricing</a>
+              <a class="ml-2 text-center" href="contact.html" id="a3">Contact</a>
+              <a class="ml-2 text-center" href="FAQ.html" id="a4">FAQ</a>
+            </div>
+          </li>
+          <li class="nav-item ml-1">
+            <a href="registry.html" type="button" class="btn waves-effect btn-sm" style="border-radius: 50px;border: solid 2px #F15025;"><span class="text-white">Register</span></a>
+          </li>
+          <li class="nav-item ml-1">
+            <a href="login.html" type="button" class="btn btn-info btn-sm">Sign in</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Purple Header -->
+<div class="edge-header">
+</div>
+
+        <div class="container free-bird">
+         <!--Grid row-->
+          <div class="row mt-5">
+            
+            <!--Grid column-->
+            <div class="col-sm-12 col-md-12 col-lg-12 mb-4">
+              <!--Form-->
+              <div class="card z-depth-5" style="top: -4rem;">
+                <div class="card-body">
+                  <!--Header-->
+                  <div class="text-center">
+                    <h1 class="text-dark font-weight-bold" style="margin-bottom: 3rem;"><u>Registration</u></h1>
+                  </div>
+          <form action="http://localhost/Project/registration.php" method="POST" enctype="multipart/form-data" onSubmit = "return checkPassword(this)" class="needs-validation" novalidate>
+            <div class="form-row ml-1 mr-1">
+              <div class="form-group col-md-4">
+                <label for="inputName"><i class="fas fa-user-circle mr-1"></i>Username</label>
+                <input type="text" class="form-control" name="uname" id="inputName" title="Enter fullname" placeholder="Enter your Name" minlength="3" maxlength="30" autocomplete="off" style="text-transform: lowercase;" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPsw"><i class="fas fa-key mr-1"></i>Password</label>
+                <input type="password" class="form-control" name="u_psw" id="inputPsw" placeholder="Create Password"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or 12 characters"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="12" required>
+                <span toggle="#password-field" class="far fa-eye-slash toggle-password"></span>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputrePsw"><i class="fas fa-key mr-1"></i>Confirm Password</label>
+                <input type="password" class="form-control" name="u_repsw" id="inputrePsw" placeholder="Confirm Password"
+                title="Enter same Password and it Must contain at least one number and one uppercase and lowercase letter, and at least 8 or 12 characters"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" maxlength="12" required>
+                <span toggle="#password-field" class="far fa-eye-slash toggle-psw"></span>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="DObirth"><i class="fas fa-birthday-cake mr-1"></i>Date Of Birth</label>
+                <input type="date" class="form-control" name="dob" id="DObirth" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="Gender"><i class="fas fa-genderless mr-1"></i>Gender</label>
+                <select class="browser-default custom-select" name="gender" required>
+                    <option disabled selected value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4"><i class="far fa-envelope mr-1"></i>Email id</label>
+                <input type="email" id="inputEmail4" name="u_mail" class="form-control" placeholder="Enter mail address" maxlength="35" autocomplete="off" style="text-transform: lowercase;" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputph1"><i class="fas fa-phone mr-1"></i>Contact No</label>
+                <input type="tel" class="form-control" name="phno" id="inputph1" placeholder="Enter Phone no." pattern="[6,7,8,9]{1}[0-9]{9}" minlength="10" maxlength="10" autocomplete="off" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputfathername"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 25"><path d="M16.5 13.5c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-7.75-1.5c-.69 0-1.25.672-1.25 1.5s.56 1.5 1.25 1.5 1.25-.672 1.25-1.5-.56-1.5-1.25-1.5zm15.25 2.313c0 1.765-.985 3.991-3.139 4.906-2.063 3.295-4.987 5.781-8.861 5.781-3.741 0-6.846-2.562-8.861-5.781-2.154-.916-3.139-3.142-3.139-4.906 0-2.053.754-3.026 1.417-3.489-.39-1.524-1.03-5.146.963-7.409.938-1.065 2.464-1.54 4.12-1.274.719-1.532 3.612-2.141 5.5-2.141 3 0 6.609.641 9.141 3.516 1.969 2.236 1.648 5.741 1.388 7.269.676.446 1.471 1.419 1.471 3.528zm-9.6 4.687h-4.8s.678 1.883 2.4 1.883c1.788 0 2.4-1.883 2.4-1.883zm7.063-6.508c-4.11.393-7.778-3.058-9.073-5.274-.081.809.186 2.557.969 3.355-3.175.064-5.835-1.592-7.46-3.868-.837 1.399-1.242 3.088-1.242 4.775 0 .722-.746 1.208-1.406.914-.14-.063-.436-.101-.671.053-1 .648-.895 4.183 1.553 5.012.224.076.413.228.536.43.655 1.086 1.354 1.98 2.086 2.722.922.633 1.056-1.875 1.667-2.72.686-.949 2.455-1.126 3.578-.322 1.124-.804 2.892-.627 3.578.322.611.846.745 3.354 1.667 2.72.731-.741 1.43-1.636 2.086-2.722.123-.202.313-.354.536-.43 2.363-.8 2.596-4.185 1.596-4.967z"/></svg>
+                  Father's Name</label>
+                <input type="text" class="form-control" name="fname" id="inputfathername" placeholder="Enter Name" minlength="" maxlength="30" autocomplete="off" required>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputoccupation1"><i class="fas fa-briefcase mr-1"></i>Occupation</label>
+              <input type="text" class="form-control" name="foccup" id="inputoccupation1" placeholder="Enter job title" minlength="" maxlength="30" autocomplete="off" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputph2"><i class="fas fa-phone mr-1"></i>Phone Number</label>
+            <input type="tel" class="form-control" name="fphno" id="inputph2" placeholder="Enter Phone no." pattern="[6,7,8,9]{1}[0-9]{9}" minlength="10" maxlength="10" autocomplete="off" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputmomname"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 26 24"><path d="M17.5 12.5c0 .828-.56 1.5-1.25 1.5s-1.25-.672-1.25-1.5.56-1.5 1.25-1.5 1.25.672 1.25 1.5zm-7.75-1.5c-.69 0-1.25.672-1.25 1.5s.56 1.5 1.25 1.5 1.25-.672 1.25-1.5-.56-1.5-1.25-1.5zm3.25 8.354c2.235 0 3-2.354 3-2.354h-6s.847 2.354 3 2.354zm13-6.75c0 2.865-.791 5.778-1.933 8.243-.542 1.169-1.163 2.238-1.817 3.153l-3.796-1.917c-1.556 1.187-3.37 1.917-5.454 1.917-1.993 0-3.825-.749-5.408-1.941l-3.842 1.941c-.654-.915-1.275-1.984-1.817-3.153-1.142-2.465-1.933-5.378-1.933-8.243 0-7.59 5.281-12.604 13-12.604s13 5.014 13 12.604zm-5.669 4.285c.123-.202.313-.354.536-.43 2.106-.713 2.57-3.529 1.802-4.746-6.576-.39-10.89-3.363-12.669-6.322-2.257 5.063-5.078 6.628-6.863 6.795-.482 1.714.322 3.706 1.996 4.273.224.076.413.228.536.43 1.708 2.83 4.015 5.111 7.331 5.111 3.318 0 5.624-2.284 7.331-5.111z"/></svg>
+              Mother's Name</label>
+            <input type="text" class="form-control" name="mname" id="inputmomname" placeholder="Enter Name" minlength="" maxlength="30" autocomplete="off" required>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputoccupation2"><i class="fas fa-briefcase mr-1"></i>Occupation</label>
+          <input type="text" class="form-control" name="moccup" id="inputoccupation2" placeholder="Enter job title" minlength="" maxlength="30" autocomplete="off" required>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputph3"><i class="fas fa-phone mr-1"></i>Phone Number</label>
+        <input type="tel" class="form-control" name="mphno" id="inputph3" placeholder="Enter phone no." pattern="[6,7,8,9]{1}[0-9]{9}" minlength="10" maxlength="10" autocomplete="off" required>
+      </div>
+            </div>
+            <div class="form-group col-md-12 mb-4">
+              <label for="inputAddress"><i class="fas fa-map-marker-alt mr-1"></i>Address</label>
+              <input type="text" class="form-control" onkeyup="countChars(this);" name="adres" id="inputAddress" placeholder="Enter your Home address" maxlength="220" required>
+              <span id="charNum" style="opacity: 0.5;float: right;">0/220</span>
+            </div>
+            <div class="form-row ml-1 mr-1">
+              <div class="form-group col-md-5">
+                <label for="inputState"><i class="fas fa-landmark mr-1"></i>State</label>
+                <select class="form-control browser-default custom-select" name="state" required>
+                    <option disabled selected value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu & Kashmir">Jammu & Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+              </div>
+              <div class="form-group col-md-5">
+                <label for="inputCity"><svg width="24" height="21" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M13 2h2v2h1v19h1v-15l6 3v12h1v1h-24v-1h1v-11h7v11h1v-19h1v-2h2v-2h1v2zm8 21v-2h-2v2h2zm-15 0v-2h-3v2h3zm8 0v-2h-3v2h3zm-2-4v-13h-1v13h1zm9 0v-1h-2v1h2zm-18 0v-2h-1v2h1zm4 0v-2h-1v2h1zm-2 0v-2h-1v2h1zm9 0v-13h-1v13h1zm7-2v-1h-2v1h2zm-18-1v-2h-1v2h1zm2 0v-2h-1v2h1zm2 0v-2h-1v2h1zm14-1v-1h-2v1h2zm0-2.139v-1h-2v1h2z"/></svg>
+                  City</label>
+                <input type="text" class="form-control" name="city" id="inputCity" placeholder="Fill it" pattern="[a-zA-Z]{3,25}" minlength="3" maxlength="25" autocomplete="off" required>
+            </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip"><i class="fas fa-map-pin mr-1"></i>Postal code</label>
+                <input type="text" class="form-control" name="pstc" id="inputCode" placeholder="Fill it" minlength="3" maxlength="6" autocomplete="off" required>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputDept"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 24 24"><path d="M22 0h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-4v8l-2-2-2 2v-8h-8.505c-1.375 0-1.375-2 0-2h16.505v-2z"/></svg>
+                  Department/Course</label>
+                <select class="browser-default form-control custom-select" name="dept" id="inputDept" required>
+                    <option disabled selected value="">Select Course</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Electronic Communication">Electronic Communication</option>
+                    <option value="Commercial Practice">Commercial Practice</option>
+                </select>
+            </div>
+              <div class="form-group col-md-2">
+                <label for="inputSem"><i class="fas fa-book-open mr-1"></i>Semester</label>
+                <select class="browser-default custom-select form-control" name="sem" id="inputSem" required>
+                    <option disabled selected value="">Select Semester</option>
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                    <option value="5">5th</option>
+                    <option value="6">6th</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputAdno"><i class="fas fa-pen mr-1"></i>Admission No.</label>
+                <input type="text" class="form-control" name="admisno" id="inputAdno" placeholder="Enter Admission no." minlength="8" maxlength="10" autocomplete="off" required>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputSem"><i class="far fa-calendar-times mr-1"></i>Year of Admission</label>
+                <input type="text" class="form-control" name="YOA" id="inputSem" placeholder="Enter YOA" pattern="[0-9]{4}" maxlength="4" autocomplete="off" required>
+              </div>
+            </div>
+            <div class="form-group ml-2">
+              <div class="row">
+                  <div class="col-md-4" style="margin-top:7px;">
+                      <label class="control-label">Photo:</label>
+                  </div>
+                  <div class="col-md-9" style="margin-bottom: 1em;">
+                      <input type="file" name="photo" required>
+                  </div>
+              </div>
+          </div>
+            <div class="form-group col-md-12">
+            <div class="form-group ml-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                <label class="form-check-label" for="gridCheck">
+                  By clicking <em>Sign up</em> you agree to our 
+                  <a href="http://localhost/Project/terms.html">terms & conditions</a>
+                </label>
+              </div>
+            </div>
+        </div>
+            <button type="submit" class="btn btn-primary ml-3">Sign up</button>
+          </form>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small text-white" style="background-color: #475B5A;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left pt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Adarsha Hostel</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #8D8E8E;">
+        <p><i class="fas fa-map-marker-alt fa-2x pr-2"></i><h6 class="font-weight-normal">#3, 12th Cross, 1st Block, R.T. Nagar, Near BDA Complex, Bengaluru, Karnataka 560032</h6></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Facilities</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #8D8E8E;">
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-door-closed text-white pr-2"></i>Rooms</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-utensils text-white pr-2"></i>Cafeteria</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-tshirt text-white pr-2"></i>laundry</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Support Center</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #8D8E8E;">
+        <p>
+          <a class="text-white font-weight-normal" href="terms.html"><i class="fas fa-trademark text-white pr-2"></i>Terms</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="about.html"><i class="fas fa-info-circle text-white pr-2"></i>About us</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="FAQ.html"><i class="far fa-question-circle text-white pr-2"></i>FAQ</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="contact.html"><i class="fas fa-hands-helping text-white pr-2"></i>Contact</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #8D8E8E;">
+        <p class="font-weight-normal">
+          <i class="fas fa-home mr-3"></i> Bengaluru, KA 560032, India</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-envelope mr-3"></i> Adarsha@gmail.com</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-phone mr-3"></i> + 91 74117 30741</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-print mr-3"></i> + 91 93801 93702</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <hr class="" style="border: solid 1px #E5E5E5;">
+    <!-- Grid row -->
+    <div class="row pb-5">
+      <div class="col-md-6 d-flex justify-content-start">
+        <!-- Copyright -->
+        <div class="h6-responsive footer-copyright text-center text-white font-weight-bold bg-transparent">© <script>
+          document.write(new Date().getFullYear());
+        </script> Copyright:
+          <a class="text-white font-weight-bold" href="Homepg.php"> Adarsha Hostel</a>
+        </div>
+        <!-- Copyright -->
+      </div>
+      <div class="col-md-6 d-flex justify-content-end">
+        <ul class="list-unstyled d-flex mb-0">
+          <li>
+            <a  href="https://www.facebook.com/adarsha.hostel" class="h5-responsive mr-3" role="button"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AdarshaHostel" class="h5-responsive mr-3" role="button"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a  href="https://www.instagram.com/adarsha_hostel_/" class="h5-responsive mr-3" role="button"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a  href="https://plus.google.com/" class="h5-responsive" role="button"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+
+<script>
+function countChars(obj){
+    document.getElementById("charNum").innerHTML = obj.value.length+'/220';
+}
+</script>
+
+<!--password show-->
+<script>
+  $("body").on('click', '.toggle-password', function() {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  $(this).css({"color":"#070c0a","top": "-1.9rem","left": "20rem","margin-left": "-25px","margin-top": "-29px","position": "relative","z-index": "2"});
+  var input = $("#inputPsw");
+  if (input.attr("type") === "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+
+});
+
+</script>
+<!--password show-->
+<script>
+  $("body").on('click', '.toggle-psw', function() {
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  $(this).css({"color":"#070c0a","top": "-1.9rem","left": "20rem","margin-left": "-25px","margin-top": "-29px","position": "relative","z-index": "2"});
+  var input = $("#inputrePsw");
+  if (input.attr("type") === "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+
+});
+
+</script>
+<script> 
+		
+  // Function to check Whether both passwords 
+  // is same or not. 
+  function checkPassword(form) { 
+    var password1 = form.u_psw.value; 
+    var password2 = form.u_repsw.value; 
+
+    // If Not same return False.	 
+    if (password1 != password2) { 
+      alert ("\nPassword did not match: Please try again...") 
+      return false; 
+    } 
+    // If same return True. 
+    else{ 
+      return true; 
+    } 
+  } 
+</script> 
+</body>
+</html>
+    

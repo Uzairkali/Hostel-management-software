@@ -1,0 +1,43 @@
+svg.intro {
+  background: transparent;
+  max-width: 1500px;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1em;
+  position: absolute;
+  padding-top: 5rem;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%); 
+}
+  svg.intro .text {
+    display: none; }
+  svg.intro.go .text {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block; }
+  svg.intro.go .text-stroke {
+    fill: none;
+    stroke: teal;
+    stroke-width: 2.8px;
+    stroke-dashoffset: -900;
+    stroke-dasharray: 900;
+    stroke-linecap: butt;
+    stroke-linejoin: round;
+    animation: dash 2.5s ease-in-out forwards; }
+  svg.intro.go .text-stroke:nth-child(2) {
+    animation-delay: .3s; }
+  svg.intro.go .text-stroke:nth-child(3) {
+    animation-delay: .9s; }
+  svg.intro.go .text-stroke-2 {
+    stroke: white;
+    animation-delay: 1.2s; }
+  svg.intro.go .text-stroke:nth-child(5) {
+    animation-delay: 1.5s; }
+  svg.intro.go .text-stroke:nth-child(6) {
+    animation-delay: 1.8s; }
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0; } }

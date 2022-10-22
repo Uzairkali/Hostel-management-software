@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title></title>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+                <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+        <style>
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+}
+        </style>
+    </head>
+    <body>
+      <h1 class="h1-responsive font-weight-bold text-center mt-5 mb-3">Hostel's Image Gallery</h1>
+      <h5 class="h5-responsive text-muted font-weight-normal text-center mb-5">Click on the images to display them in full size. 
+        Or use the below filters to see what you want to.</h5>
+
+          <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-12 d-flex justify-content-center mb-5">
+
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Students</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Rooms</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="3">Beds</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="4">Interiors</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="5">Cafeteria</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="6">Kitchen</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="7">Laundry</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="8">Bathroom</button>
+
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+      <div class="">
+        <div class="gallery" id="gallery">
+      
+          <div class="row d-flex justify-content-center mdb-lightbox mr-5 ml-5">
+      
+            <figure class="col-lg-3 all 4">
+              <a href="http://localhost/Project/assets/img/hostelrom.jpg" data-size="1600x1067">
+                <img alt="picture1" src="http://localhost/Project/assets/img/hostelrom.jpg" class="img-fluid">
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 3 2">
+              <a href="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" data-size="1600x1067">
+                <img alt="picture2" src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 4">
+              <a href="http://localhost/Project/assets/img/photo-1556228453-efd6c1ff04f6.jpg" data-size="1600x1067">
+                <img alt="picture3" src="http://localhost/Project/assets/img/photo-1556228453-efd6c1ff04f6.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 6">
+              <a href="http://localhost/Project/assets/img/photo-1556912167-f556f1f39fdf.jpg" data-size="1600x1067">
+                <img alt="picture4" src="http://localhost/Project/assets/img/photo-1556912167-f556f1f39fdf.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 4">
+              <a href="http://localhost/Project/assets/img/photo-1524758631624-e2822e304c36.jpg" data-size="1600x1067">
+                <img alt="picture5" src="http://localhost/Project/assets/img/photo-1524758631624-e2822e304c36.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 4">
+              <a href="http://localhost/Project/assets/img/photo-1565629196891-2ddb37c9e9fc.jpg" data-size="1600x1067">
+                <img alt="picture6" src="http://localhost/Project/assets/img/photo-1565629196891-2ddb37c9e9fc.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 8">
+              <a href="http://localhost/Project/assets/img/photo-1556438757-f9181aa300ca.jpg" data-size="1600x1067">
+                <img alt="picture7" src="http://localhost/Project/assets/img/photo-1556438757-f9181aa300ca.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 8">
+              <a href="http://localhost/Project/assets/img/photo-1564705357762-0c715c10582c.jpg" data-size="1600x1067">
+                <img alt="picture8" src="http://localhost/Project/assets/img/photo-1564705357762-0c715c10582c.jpg" class="img-fluid" />
+              </a>
+            </figure>
+            
+
+            <figure class="col-lg-3 all 5">
+              <a href="http://localhost/Project/assets/img/photo-1522336572468-97b06e8ef143.jpg" data-size="1600x1067">
+                <img alt="picture9" src="http://localhost/Project/assets/img/photo-1522336572468-97b06e8ef143.jpg" class="img-fluid">
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 5">
+              <a href="http://localhost/Project/assets/img/photo-1525610553991-2bede1a236e2.jpg" data-size="1600x1067">
+                <img alt="picture10" src="http://localhost/Project/assets/img/photo-1525610553991-2bede1a236e2.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 6">
+              <a href="http://localhost/Project/assets/img/photo-1545659531-9a66f06e260a.jpg" data-size="1600x1067">
+                <img alt="picture11" src="http://localhost/Project/assets/img/photo-1545659531-9a66f06e260a.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 6">
+              <a href="http://localhost/Project/assets/img/photo-1428515613728-6b4607e44363.jpg" data-size="1600x1067">
+                <img alt="picture12" src="http://localhost/Project/assets/img/photo-1428515613728-6b4607e44363.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 6">
+              <a href="http://localhost/Project/assets/img/photo-1561350117-501b4661f8d4.jpg" data-size="1600x1067">
+                <img alt="picture13" src="http://localhost/Project/assets/img/photo-1561350117-501b4661f8d4.jpg" class="img-fluid" />
+              </a>
+            </figure>
+      
+            <figure class="col-lg-3 all 7">
+              <a href="http://localhost/Project/assets/img/photo-1521656693074-0ef32e80a5d5.jpg" data-size="1600x1067">
+                <img alt="picture14" src="http://localhost/Project/assets/img/photo-1521656693074-0ef32e80a5d5.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 5">
+              <a href="http://localhost/Project/assets/img/photo-1555396273-367ea4eb4db5.jpg" data-size="1600x1067">
+                <img alt="picture15" src="http://localhost/Project/assets/img/photo-1555396273-367ea4eb4db5.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 5">
+              <a href="http://localhost/Project/assets/img/photo-1569185115737-e027065f7bc8.jpg" data-size="1600x1067">
+                <img alt="picture16" src="http://localhost/Project/assets/img/photo-1569185115737-e027065f7bc8.jpg" class="img-fluid" />
+              </a>
+            </figure>
+            
+            <figure class="col-lg-3 all 5">
+              <a href="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=785&q=80" data-size="1600x1067">
+                <img alt="picture17" src="https://images.unsplash.com/photo-1485182708500-e8f1f318ba72?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=785&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 3 2">
+              <a href="https://t4.ftcdn.net/jpg/02/31/30/91/240_F_231309117_rQh09QCLwOvG1OF4omra5c2Sdv0xa03H.jpg" data-size="1600x1067">
+                <img alt="picture19" src="https://t4.ftcdn.net/jpg/02/31/30/91/240_F_231309117_rQh09QCLwOvG1OF4omra5c2Sdv0xa03H.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 3 2">
+              <a href="https://t3.ftcdn.net/jpg/01/00/51/96/240_F_100519687_XJFPs2oksYIiFemXutfs4g3grgA84JIS.jpg" data-size="1600x1067">
+                <img alt="picture20" src="https://t3.ftcdn.net/jpg/01/00/51/96/240_F_100519687_XJFPs2oksYIiFemXutfs4g3grgA84JIS.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 3 2">
+              <a href="https://t3.ftcdn.net/jpg/03/02/16/66/240_F_302166646_Pyyfy0usRRb8pWxSbwqrHC7ddBf7GN1V.jpg" data-size="1600x1067">
+                <img alt="picture21" src="https://t3.ftcdn.net/jpg/03/02/16/66/240_F_302166646_Pyyfy0usRRb8pWxSbwqrHC7ddBf7GN1V.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 1">
+              <a href="https://t4.ftcdn.net/jpg/02/72/44/11/240_F_272441120_1oenYFruKIYGispgzIV5ZhyT2efmjkua.jpg" data-size="1600x1067">
+                <img alt="picture22" src="https://t4.ftcdn.net/jpg/02/72/44/11/240_F_272441120_1oenYFruKIYGispgzIV5ZhyT2efmjkua.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 1">
+              <a href="https://t3.ftcdn.net/jpg/02/31/32/22/240_F_231322241_kVQd9BxR1cCh3u65qT8GOQRDy4Jv2PSc.jpg" data-size="1600x1067">
+                <img alt="picture23" src="https://t3.ftcdn.net/jpg/02/31/32/22/240_F_231322241_kVQd9BxR1cCh3u65qT8GOQRDy4Jv2PSc.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 3 2">
+              <a href="https://t4.ftcdn.net/jpg/01/02/05/89/240_F_102058903_8kViueNFR3Cli2fR9OpFBlNBD9KpawGZ.jpg" data-size="1600x1067">
+                <img alt="picture24" src="https://t4.ftcdn.net/jpg/01/02/05/89/240_F_102058903_8kViueNFR3Cli2fR9OpFBlNBD9KpawGZ.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 7">
+              <a href="http://localhost/Project/assets/img/photo-1551761429-8232f9f5955c.jpg" data-size="1600x1067">
+                <img alt="picture27" src="http://localhost/Project/assets/img/photo-1551761429-8232f9f5955c.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 1">
+              <a href="https://t4.ftcdn.net/jpg/01/35/77/91/240_F_135779107_hKkPVTyG0W0X2oKY5Aon1p1KgZOHFGun.jpg" data-size="1600x1067">
+                <img alt="picture26" src="https://t4.ftcdn.net/jpg/01/35/77/91/240_F_135779107_hKkPVTyG0W0X2oKY5Aon1p1KgZOHFGun.jpg" class="img-fluid" />
+              </a>
+            </figure>
+
+            
+            <figure class="col-lg-3 all 1">
+              <a href="https://t4.ftcdn.net/jpg/01/72/69/51/240_F_172695178_mQV4F2uwoDjLIPNrDKeeiYsmb3oXbPeD.jpg" data-size="1600x1067">
+                <img alt="picture25" src="https://t4.ftcdn.net/jpg/01/72/69/51/240_F_172695178_mQV4F2uwoDjLIPNrDKeeiYsmb3oXbPeD.jpg" class="img-fluid" />
+              </a>
+            </figure>
+            
+            <figure class="col-lg-3 all 8">
+              <a href="https://images.unsplash.com/photo-1560448075-bb485b067938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" data-size="1600x1067">
+                <img alt="picture28" src="https://images.unsplash.com/photo-1560448075-bb485b067938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 4">
+              <a href="https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" data-size="1600x1067">
+                <img alt="picture29" src="https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 1">
+              <a href="https://images.unsplash.com/photo-1560976812-3fcd2f7349b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" data-size="1600x1067">
+                <img alt="picture30" src="https://images.unsplash.com/photo-1560976812-3fcd2f7349b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 4">
+              <a href="https://images.unsplash.com/photo-1551133990-70307d02dc94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" data-size="1600x1067">
+                <img alt="picture31" src="https://images.unsplash.com/photo-1551133990-70307d02dc94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 7">
+              <a href="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" data-size="1600x1067">
+                <img alt="picture32" src="https://images.unsplash.com/photo-1583172747862-afcb755ebd13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+            <figure class="col-lg-3 all 7">
+              <a href="https://images.unsplash.com/photo-1521657203881-d303f9763a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" data-size="1600x1067">
+                <img alt="picture33" src="https://images.unsplash.com/photo-1521657203881-d303f9763a88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80" class="img-fluid" />
+              </a>
+            </figure>
+
+          </div>
+      
+        </div>
+      </div>
+
+      <script>
+        $(function() {
+    var selectedClass = "";
+    $(".filter").click(function(){
+    selectedClass = $(this).attr("data-rel");
+    $("#gallery").fadeTo(100, 0.1);
+    $("#gallery figure").not("."+selectedClass).fadeOut().removeClass('animation');
+    setTimeout(function() {
+    $("."+selectedClass).fadeIn().addClass('animation');
+    $("#gallery").fadeTo(300, 1);
+    }, 300);
+    });
+    });
+    </script>
+    
+    </body>
+</html>

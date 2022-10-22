@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">  
+
+<script>
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+
+</script>
+
+
+<style>
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #F88C7D !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+  background: #F88C7D !important;
+  }
+}
+
+div #sign {
+  overflow: block;
+  padding-bottom: 5rem;
+}
+
+.card {
+  background-color: rgba(122, 144, 190, 0.2);
+}
+
+.md-form label {
+  color: #ffffff;
+}
+
+h6 {
+  line-height: 1.7;
+}
+
+.fa-eye-slash {
+    color: #ffffff;
+    top: -2.5rem;
+    left: 24rem;
+    margin-left: -25px;
+    margin-top: -29px;
+    position: relative;
+    z-index: 2;
+}
+
+</style>
+
+</head>
+<body>
+
+        <header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand white-text">
+      <i class="fab fa-asymmetrik mr-1"></i><span class="" style="font-family: 'Balsamiq Sans', cursive;">HMS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="Homepg.html"><i class="fas fa-home"></i>Home
+            <span class="sr-only">(current)</span>
+          </a>
+          </li>
+          <li class="nav-item ml-1">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item ml-1">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Support</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="ml-2 text-center" href="features.html" id="a1">Features</a>
+              <a class="ml-2 text-center" href="pricing.html" id="a2">Pricing</a>
+              <a class="ml-2 text-center" href="contact.html" id="a3">Contact</a>
+              <a class="ml-2 text-center" href="FAQ.html" id="a4">FAQ</a>
+            </div>
+          </li>
+          <li class="nav-item ml-1">
+            <a href="registry.html" type="button" class="btn waves-effect btn-sm" style="border-radius: 50px;border: solid 2px #605579;"><span class="text-white">Register</span></a>
+          </li>
+          <li class="nav-item ml-1">
+            <a href="login.html" type="button" class="btn btn-info btn-sm">Sign in</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-gradient align-items-center">
+              <!-- Content -->
+              <div class="container" style="margin-top: 7rem;">
+                <!--Grid row-->
+                <div class="row mt-5">
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-5 mt-md-0 mt-5 white-text text-center text-md-left" id="sign" style="top: 6rem;overflow: hidden;">
+                    <h1 class="h1-responsive font-weight-bold wow fadeInRight" data-wow-delay="0.3s"><mark>Administrator</mark></h1>
+                    <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
+                    <h6 class="mb-3 wow fadeInLeft" data-wow-delay="0.3s" style="font-family: cursive;"><strong><i>Login Allowed only for the Hostel Management Faculty.</i></strong>  
+                  </h6>
+                  </div>
+                  <!--Grid column-->
+                  <div class="col-md-6 col-xl-5 mb-4">
+                    <!--Form-->
+                    <form action="http://localhost/Project/adminauthenticate.php" method="POST" class="needs-validation" novalidate>
+                    <div class="card wow fadeInRight z-depth-4" data-wow-delay="0.3s">
+                      <div class="card-body">
+                        <!--Header-->
+                        <div class="text-center">
+                          <h3 class="dark-text" style="font-family: cursive;">
+                            <i class="fas fa-user dark-text pr-1"></i>Login</h3>
+                          <hr class="hr-light">
+                        </div>
+                        <!--Body-->
+                        <div class="md-form" style="margin-top: 3rem;">
+                            <i class="fas fa-user prefix white-text"></i>
+                            <input type="text" id="form3" name="ad_name" class="form-control font-weight-bold" autocomplete="off" 
+                            style="text-transform: lowercase;" minlength="3" maxlength="20" required>
+                            <label for="form3">Admin name</label>
+                          </div>
+                          <div class="md-form">
+                            <i class="fas fa-lock prefix white-text active"></i>
+                            <input type="password" id="form4" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                            minlength="8" maxlength="12" class="form-control font-weight-bold" autocomplete="off" required>
+                            <label for="form4">password</label>
+                            <span toggle="#password-field" class="far fa-eye-slash toggle-password"></span>
+                          </div>
+                          <div class="text-center mt-4">
+                            <button class="btn waves-effect text-white amy-crisp-gradient">LOGIN</button>
+                            <hr class="hr-light mb-3 mt-4">
+                            <a href="https://www.facebook.com/adarsha.hostel" class="mx-2" role="button"><i class="fab fa-facebook-square lime-text btn-lg"></i></a>
+                            <a href="https://www.instagram.com/adarsha_hostel_/" class="mx-2" role="button"><i class="fab fa-instagram cyan-text btn-lg"> </i></a>
+                            <a href="https://plus.google.com/" class="mx-2" role="button"><i class="fab fa-google-plus-g white-text btn-lg"></i></a>
+                            <a href="https://twitter.com/AdarshaHostel" class="mx-2" role="button"><i class="fab fa-twitter pink-text btn-lg"> </i></a>                      
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <!--/.Form-->
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+        </header>
+        <!-- Main navigation -->
+
+<!-- Footer -->
+<footer class="page-footer font-small text-white" style="background-color: #0C4576;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left pt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Adarsha Hostel</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #FBC1A0;">
+        <p><i class="fas fa-map-marker-alt fa-2x pr-2"></i><h6 class="font-weight-normal">#3, 12th Cross, 1st Block, R.T. Nagar, Near BDA Complex, Bengaluru, Karnataka 560032</h6></p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Facilities</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #FBC1A0;">
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-door-closed text-white pr-2"></i>Rooms</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-utensils text-white pr-2"></i>Cafeteria</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="gallery.html"><i class="fas fa-tshirt text-white pr-2"></i>laundry</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Support Center</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #FBC1A0;">
+        <p>
+          <a class="text-white font-weight-normal" href="terms.html"><i class="fas fa-trademark text-white pr-2"></i>Terms</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="about.html"><i class="fas fa-info-circle text-white pr-2"></i>About us</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="FAQ.html"><i class="far fa-question-circle text-white pr-2"></i>FAQ</a>
+        </p>
+        <p>
+          <a class="text-white font-weight-normal" href="contact.html"><i class="fas fa-hands-helping text-white pr-2"></i>Contact</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;border: solid 1px #FBC1A0;">
+        <p class="font-weight-normal">
+          <i class="fas fa-home mr-3"></i> Bengaluru, KA 560032, India</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-envelope mr-3"></i> Adarsha@gmail.com</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-phone mr-3"></i> + 91 74117 30741</p>
+        <p class="font-weight-normal">
+          <i class="fas fa-print mr-3"></i> + 91 93801 93702</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <hr class="" style="border: solid 1px #E5E5E5;">
+    <!-- Grid row -->
+    <div class="row pb-5">
+      <div class="col-md-6 d-flex justify-content-start">
+        <!-- Copyright -->
+        <div class="h6-responsive footer-copyright text-center text-white font-weight-bold bg-transparent">© <script>
+          document.write(new Date().getFullYear());
+        </script> Copyright:
+          <a class="text-white font-weight-bold" href="Homepg.php"> Adarsha Hostel</a>
+        </div>
+        <!-- Copyright -->
+      </div>
+      <div class="col-md-6 d-flex justify-content-end">
+        <ul class="list-unstyled d-flex mb-0">
+          <li>
+            <a  href="https://www.facebook.com/adarsha.hostel" class="h5-responsive mr-3" role="button"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/AdarshaHostel" class="h5-responsive mr-3" role="button"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a  href="https://www.instagram.com/adarsha_hostel_/" class="h5-responsive mr-3" role="button"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a  href="https://plus.google.com/" class="h5-responsive" role="button"><i class="fab fa-google-plus-g"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer Links -->
+</footer>
+<!-- Footer -->
+
+        <script>
+          // Animations init
+          new WOW().init();
+        </script>
+        
+        <!--password show-->
+        <script>
+          $("body").on('click', '.toggle-password', function() {
+          $(this).toggleClass("fa-eye fa-eye-slash");
+          $(this).css({"color":"#ffffff","top": "-2.5rem","left": "24rem","margin-left": "-25px","margin-top": "-29px","position": "relative","z-index": "2"});
+          var input = $("#form4");
+          if (input.attr("type") === "password") {
+            input.attr("type", "text");
+          } else {
+            input.attr("type", "password");
+          }
+
+        });
+        </script>
+</body>
+</html>
